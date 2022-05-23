@@ -9,4 +9,8 @@ public interface Car extends HasBrand {
 	void turnRight();
 	void stop();
 	boolean isMaintenance(); // kalo nggak error wkwkwk, soal nya di polymorphism in nya ke kelas car 
+	// method default : sunnah untuk di override di semua kelas implements nya 
+	default boolean isBig() {
+		return false;
+	}
 }
