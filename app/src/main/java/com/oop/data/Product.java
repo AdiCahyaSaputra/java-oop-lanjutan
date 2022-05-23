@@ -12,5 +12,10 @@ public class Product {
 	public void getPrice() {
 		System.out.println(this.price);
 	}
+
+	// Override method toString() yaitu method yg terpanggil saat kita printout kelas ini ke console 
+	public String toString() {
+		return "Product name: " + this.name + ", price: " + this.price;
+	}
 }
 
