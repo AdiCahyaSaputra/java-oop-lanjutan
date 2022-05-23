@@ -10,5 +10,7 @@ public class CarApp {
     avanza.turnRight();
     avanza.turnLeft();
     avanza.stop();
+    System.out.println(avanza.getBrand());
+    System.out.println(avanza.isMaintenance());
   }
 }

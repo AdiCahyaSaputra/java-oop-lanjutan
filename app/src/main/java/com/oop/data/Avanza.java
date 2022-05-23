@@ -1,6 +1,7 @@
 package com.oop.data;
 
-public class Avanza implements Car {
+// multiple implements ( untuk class biasa ) 
+public class Avanza implements Car, IsMaintenance {
 	public void drive() {
 		System.out.println("Driving a car");
 	}
@@ -15,5 +16,14 @@ public class Avanza implements Car {
 
 	public void stop() {
 		System.out.println("Stop a car");
+	}
+
+	// waijib ngisi getBrand gara² si car inheritance ke si HasBrand 
+	public String getBrand() {
+		return "Avanza";
+	}
+
+	public boolean isMaintenance() {
+		return false;
 	}
 }
