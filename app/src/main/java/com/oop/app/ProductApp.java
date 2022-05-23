@@ -8,5 +8,8 @@ public class ProductApp {
 		redmi.getPrice();
 
 		System.out.println(redmi); // secara otomatis memanggil .toString() 
+
+		Product redmi2 = new Product("Redmi Note 4x", 2_000_000);
+		System.out.println(redmi.equals(redmi2)); // harus nya true karena tadi udh di Override 
 	}
 }
