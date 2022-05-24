@@ -13,6 +13,13 @@ public class Product {
 		System.out.println(this.price);
 	}
 
+	// hashCode() representasi int dari object di memori ( sama kayak toStrinf() ) 
+	public int hashCode() {
+		// fungsi nya akan di bahas di Java Collection 
+		int result = this.name != null ? name.hashCode() : 0;
+		return 31 * result + this.price;
+	} 
+
 	// Override method toString() yaitu method yg terpanggil saat kita printout kelas ini ke console 
 	public String toString() {
 		return "Product name: " + this.name + ", price: " + this.price;

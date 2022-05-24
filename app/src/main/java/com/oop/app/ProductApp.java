@@ -11,5 +11,8 @@ public class ProductApp {
 
 		Product redmi2 = new Product("Redmi Note 4x", 2_000_000);
 		System.out.println(redmi.equals(redmi2)); // harus nya true karena tadi udh di Override 
+
+		// hashCode harus sama ( akan di jelaskan di java Collection ) 
+		System.out.println(redmi.hashCode() == redmi2.hashCode());
 	}
 }
