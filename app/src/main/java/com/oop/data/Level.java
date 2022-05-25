@@ -8,5 +8,17 @@ package com.oop.data;
  * */
 
 public enum Level {
-	PREMIUM, VIP, BASE
+	// tambahin titik koma jika ada code lagi di bawah data enum nya 
+	// btw klo ada constructer, maka init nya di data enum nya  
+	PREMIUM("Sangat GG"), VIP("GG"), BASE("Missqueen");
+	private String desc;
+	
+	// constructer di enum ( tpi g bisa public ) 
+	Level(String desc) {
+		this.desc = desc;
+	}
+
+	public String getDesc() {
+		return this.desc;
+	}
 }
