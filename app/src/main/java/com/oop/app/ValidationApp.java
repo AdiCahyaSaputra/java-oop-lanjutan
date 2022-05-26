@@ -21,5 +21,16 @@ public class ValidationApp {
       System.out.println("Tetap dijalankan Walaupun Error");
     }
 
+
+    // RuntimeException tidak perlu try catch 
+    String username2 = null;
+    String pw2 = "";
+
+    ValidationUtil.validateRuntime(username2, pw2); // tpi aplikasi nya tetep nge close setelah ketemu error ( code di bawah g bakal jalan ) 
+    System.out.println("Bisa Login");
+
+    // Biasa nya digunakan supaya lebih clean ( yakali try catch an terus terus an ) 
+    // mending taro semua nya di error handling ( file ) 
+
   }
 }
