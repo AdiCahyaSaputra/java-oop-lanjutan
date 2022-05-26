@@ -15,10 +15,8 @@ public class ValidationApp {
       ValidationUtil.validate(username, pw);
       System.out.println("Berhasil Login");
 
-    } catch(ValidationException err) { // argument catch nya harus sesuai dengan throws dari method ValidationUtil 
+    } catch(ValidationException | NullPointerException err) { // Shorthand Multiple Exception 
       System.out.println("Terjadi Error : " + err.getMessage());
-    } catch(NullPointerException err) { // multiple catch jika memang di util nya nge throw 2 Exception 
-      System.out.println("Terjadi Error di NullPointerException : " + err.getMessage());
     }
 
   }
