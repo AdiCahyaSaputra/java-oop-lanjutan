@@ -17,6 +17,8 @@ public class ValidationApp {
 
     } catch(ValidationException err) { // argument catch nya harus sesuai dengan throws dari method ValidationUtil 
       System.out.println("Terjadi Error : " + err.getMessage());
+    } catch(NullPointerException err) { // multiple catch jika memang di util nya nge throw 2 Exception 
+      System.out.println("Terjadi Error di NullPointerException : " + err.getMessage());
     }
 
   }
