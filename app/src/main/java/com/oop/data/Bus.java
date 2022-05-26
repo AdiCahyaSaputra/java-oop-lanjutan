@@ -4,7 +4,8 @@ public class Bus implements Car {
 	public void drive() {
 		System.out.println("Bus is driving");
 	}
-
+	
+	@Override // anotation bawaan si java 
 	public void turnRight() {
 		System.out.println("Bus Turn Right");
 	}

@@ -1,5 +1,6 @@
 package com.oop.data;
 
+@Anotation(name = "Application", tags = { "Java", "OOP", "Package" }) // Metadata
 public class Application {
 	public static final int PROCECORS;
 
