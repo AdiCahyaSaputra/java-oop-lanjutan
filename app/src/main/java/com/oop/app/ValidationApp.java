@@ -17,6 +17,8 @@ public class ValidationApp {
 
     } catch(ValidationException | NullPointerException err) { // Shorthand Multiple Exception 
       System.out.println("Terjadi Error : " + err.getMessage());
+    } finally { // biasa nya digunakan untuk read file. try readFile. error or not just close readFile for memory management 
+      System.out.println("Tetap dijalankan Walaupun Error");
     }
 
   }
